@@ -6,6 +6,10 @@ package com.rolex.haro.scala.samples.basic
   * Date: 2016/3/21
   * version: 1.0
   */
+class MapTest {
+
+}
+
 object MapTest {
 
     def main(args: Array[String]) {
@@ -37,6 +41,9 @@ object MapTest {
         // 排序的map
         val map2 = scala.collection.immutable.SortedMap("java" -> 1, "scala" -> 2, "groovy" -> 3)
 
+        val map3 = Map("a" -> 3, "b" -> 2, "c" -> 1)
+        println(map3.max)
+        println(map3.maxBy("_" ->))
 
     }
 }
