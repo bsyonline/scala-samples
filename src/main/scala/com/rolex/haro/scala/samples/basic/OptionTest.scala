@@ -28,7 +28,6 @@ object OptionTest {
         println(v3)
 
         val v4 = map.get("a").flatMap(i => map.get("b").map(y => y * i))
-        val v5 = map.get("a").flatMap(i => printNum(i))
         println(v4)
     }
 
